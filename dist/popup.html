@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=300">
+  <title>HoyoOpener</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon32.png" alt="" width="24" height="24">
+    <span class="title">HoyoOpener</span>
+    <span class="version" id="version"></span>
+  </div>
+
+  <div class="status" id="status" aria-live="polite">
+    <span class="status-dot" id="statusDot"></span>
+    <span id="statusText">Loading...</span>
+  </div>
+
+  <button id="openAll" class="btn-primary">Open All Check-ins</button>
+
+  <div class="section">
+    <h2>Games</h2>
+    <div id="gameList"></div>
+  </div>
+
+  <div class="section">
+    <label class="section-label" for="region">Server region</label>
+    <select id="region"></select>
+  </div>
+
+  <div class="section">
+    <label class="section-label" for="triggerTime">Auto-open time</label>
+    <input type="time" id="triggerTime" step="60">
+  </div>
+
+  <div class="footer">
+    <div id="lastRun">Loading...</div>
+    <button id="resetBtn" class="btn-reset" hidden>Reset today</button>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

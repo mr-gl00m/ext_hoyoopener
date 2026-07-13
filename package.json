@@ -1,0 +1,16 @@
+{
+  "name": "hoyo-opener",
+  "version": "2.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.0.0 || ^22.0.0 || >=24.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "vitest run tests"
+  },
+  "devDependencies": {
+    "vitest": "4.1.10"
+  }
+}
